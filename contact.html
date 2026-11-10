@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联系我 · 钟欣雨</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap bar">
+    <a class="logo" href="index.html"><span class="dot"></span>钟欣雨</a>
+    <nav class="nav">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于我</a>
+      <a href="daily.html">我的日常</a>
+      <a href="album.html">小相册</a>
+      <a href="world.html">小世界</a>
+      <a href="contact.html" class="active">联系我</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="wrap page-head">
+    <a class="crumb" href="index.html">← 返回首页</a>
+    <h1>联系我</h1>
+    <p>邮件我基本每天都会看。拼饭、逛展、换书单，或者就随便聊聊，都很欢迎。</p>
+  </section>
+
+  <section class="wrap contact-cards">
+    <div class="cc fade">
+      <div class="icon i-peach">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EE7C8F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3.4" y="5.6" width="17.2" height="12.8" rx="2.4"/>
+          <path d="M4.4 7.2 12 13l7.6-5.8"/>
+        </svg>
+      </div>
+      <h3>邮箱</h3>
+      <p>3071143582@qq.com</p>
+    </div>
+
+    <div class="cc fade d1">
+      <div class="icon i-mint">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3E8E6E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 20.2s-7.2-4.6-7.2-9.3A4.2 4.2 0 0 1 12 8.4a4.2 4.2 0 0 1 7.2 2.5c0 4.7-7.2 9.3-7.2 9.3z"/>
+        </svg>
+      </div>
+      <h3>微信</h3>
+      <p>forever_lifeline</p>
+    </div>
+
+    <div class="cc fade d2">
+      <div class="icon i-sky">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2C5C8A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 21s6.4-5.6 6.4-10.4A6.4 6.4 0 0 0 5.6 10.6C5.6 15.4 12 21 12 21z"/>
+          <circle cx="12" cy="10.4" r="2.4"/>
+        </svg>
+      </div>
+      <h3>常出没</h3>
+      <p>图书馆靠窗的蓝沙发</p>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <!-- 这个表单只是"长得像表单"，点了不会真的发出去。
+         作业交这个够用；以后想真能收信，接一个免费表单服务即可。 -->
+    <form class="form" onsubmit="alert('这是一个静态页面，表单不会真的发送～\n想找我的话请直接发邮件。'); return false;">
+      <h2 class="sec-title" style="font-size:20px;">给留句话</h2>
+      <p class="sec-sub" style="font-size:14px;">（演示用表单，不会真的寄出，想找我还是发邮件最稳）</p>
+
+      <label for="name">怎么称呼你</label>
+      <input id="name" name="name" type="text" placeholder="比如：欣雨" required>
+
+      <label for="mail">你的邮箱</label>
+      <input id="mail" name="mail" type="email" placeholder="you@example.com" required>
+
+      <label for="msg">想说的话</label>
+      <textarea id="msg" name="msg" placeholder="随便写点什么，看到会回。"></textarea>
+
+      <button type="submit">发送留言</button>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 钟欣雨 · 手写 HTML 与 CSS，未使用任何模板</p>
+</footer>
+
+</body>
+</html>
