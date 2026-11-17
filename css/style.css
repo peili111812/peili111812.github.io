@@ -432,6 +432,7 @@ footer{
   width:100%;
   height:100%;
   object-fit:cover;   /* 自动裁成圆形，不变形 */
+  transform:scale(1.28);  /* 卡片太小，稍微放大让人脸更清楚 */
 }
 
 /* 19) 真照片卡片（带说明文字） */
