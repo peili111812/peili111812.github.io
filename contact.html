@@ -5,24 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>联系我 · 钟欣雨</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="联系钟欣雨：邮箱、微信，以及她常出没的地方。">
+  <meta name="theme-color" content="#FFFCF7">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
 </head>
 <body>
+
+<a class="skip-link" href="#main">跳到主要内容</a>
+<a id="top"></a>
 
 <header class="topbar">
   <div class="wrap bar">
     <a class="logo" href="index.html"><span class="dot"></span>钟欣雨</a>
-    <nav class="nav">
+    <nav class="nav" aria-label="主导航">
       <a href="index.html">首页</a>
       <a href="about.html">关于我</a>
       <a href="daily.html">我的日常</a>
       <a href="album.html">小相册</a>
       <a href="world.html">小世界</a>
-      <a href="contact.html" class="active">联系我</a>
+      <a href="contact.html" class="active" aria-current="page">联系我</a>
     </nav>
   </div>
 </header>
 
-<main>
+<main id="main">
 
   <section class="wrap page-head">
     <a class="crumb" href="index.html">← 返回首页</a>
@@ -65,29 +72,25 @@
   </section>
 
   <section class="wrap">
-    <!-- 这个表单只是"长得像表单"，点了不会真的发出去。
-         作业交这个够用；以后想真能收信，接一个免费表单服务即可。 -->
-    <form class="form" onsubmit="alert('这是一个静态页面，表单不会真的发送～\n想找我的话请直接发邮件。'); return false;">
-      <h2 class="sec-title" style="font-size:20px;">给留句话</h2>
-      <p class="sec-sub" style="font-size:14px;">（演示用表单，不会真的寄出，想找我还是发邮件最稳）</p>
-
-      <label for="name">怎么称呼你</label>
-      <input id="name" name="name" type="text" placeholder="比如：欣雨" required>
-
-      <label for="mail">你的邮箱</label>
-      <input id="mail" name="mail" type="email" placeholder="you@example.com" required>
-
-      <label for="msg">想说的话</label>
-      <textarea id="msg" name="msg" placeholder="随便写点什么，看到会回。"></textarea>
-
-      <button type="submit">发送留言</button>
-    </form>
+    <!-- 纯静态页面没有后台。与其放一个点了没反应的假表单，
+         不如把按钮做成真正能用的：点一下直接调起邮件客户端。 -->
+    <div class="mailbox">
+      <div>
+        <strong>想说的太多，写不下来？</strong>
+        <p class="sec-sub" style="margin:6px 0 0;">
+          这个页面是纯静态的，没有服务器，所以不放「假装能发送」的表单。
+          点右边的按钮会直接打开你的邮件客户端，写好发出去就行。
+        </p>
+      </div>
+      <a class="btn btn-main" href="mailto:3071143582@qq.com?subject=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%9D%A5%E8%87%AA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5">写封邮件给我</a>
+    </div>
   </section>
 
 </main>
 
 <footer>
   <p>© 2026 钟欣雨 · 手写 HTML 与 CSS，未使用任何模板</p>
+  <p class="foot-links"><a class="to-top" href="#top">回到顶部 ↑</a></p>
 </footer>
 
 </body>

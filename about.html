@@ -5,15 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>关于我 · 钟欣雨</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="关于钟欣雨：武汉人，慢热、钝感、佛系，但该负责的事会很认真；华中科技大学计算机科学与技术专业在读。">
+  <meta name="theme-color" content="#FFFCF7">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
 </head>
 <body>
+
+<a class="skip-link" href="#main">跳到主要内容</a>
+<a id="top"></a>
 
 <header class="topbar">
   <div class="wrap bar">
     <a class="logo" href="index.html"><span class="dot"></span>钟欣雨</a>
-    <nav class="nav">
+    <nav class="nav" aria-label="主导航">
       <a href="index.html">首页</a>
-      <a href="about.html" class="active">关于我</a>
+      <a href="about.html" class="active" aria-current="page">关于我</a>
       <a href="daily.html">我的日常</a>
       <a href="album.html">小相册</a>
       <a href="world.html">小世界</a>
@@ -22,7 +29,7 @@
   </div>
 </header>
 
-<main>
+<main id="main">
 
   <section class="wrap page-head">
     <a class="crumb" href="index.html">← 返回首页</a>
@@ -35,7 +42,7 @@
     <!-- 左边：小档案卡（滚动时会停在顶部不动） -->
     <aside class="profile">
       <div class="mini">
-        <img src="images/avatar.jpg" alt="钟欣雨的头像：高马尾、金色圆框眼镜、白毛衣">
+        <img src="images/avatar.jpg" alt="钟欣雨的头像：高马尾、金色圆框眼镜、白毛衣" width="640" height="575">
       </div>
       <dl>
         <dt>姓名</dt><dd>钟欣雨</dd>
@@ -108,14 +115,14 @@
 
       <div class="two-col">
         <figure class="photo-card">
-          <img src="images/dorm-desk.jpg" alt="蓝色的宿舍书桌、木椅和收纳柜" loading="lazy">
+          <img src="images/dorm-desk.jpg" alt="蓝色的宿舍书桌、木椅和收纳柜" loading="lazy" width="750" height="1000">
           <figcaption>
             <b>我的桌子</b>
             蓝色的柜子配上木椅子，有点旧，但东西都摆在自己顺手的位置。
           </figcaption>
         </figure>
         <figure class="photo-card">
-          <img src="images/huster-gift.jpg" alt="学校文创：金色书签和越王勾践剑造型的钥匙扣" loading="lazy">
+          <img src="images/huster-gift.jpg" alt="学校文创：金色书签和越王勾践剑造型的钥匙扣" loading="lazy" width="950" height="1000">
           <figcaption>
             <b>桌上的小摆件</b>
             学校的文创书签和越王剑钥匙扣，一个金色的吊坠，很好看。
@@ -138,6 +145,7 @@
 
 <footer>
   <p>© 2026 钟欣雨 · 手写 HTML 与 CSS，未使用任何模板</p>
+  <p class="foot-links"><a class="to-top" href="#top">回到顶部 ↑</a></p>
 </footer>
 
 </body>

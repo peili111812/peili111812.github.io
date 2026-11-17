@@ -1,22 +1,29 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>钟欣雨 · 个人主页</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="钟欣雨的个人主页：华中科技大学计算机科学与技术专业，记录日常、相册、读书与游戏的小天地。">
+  <meta name="theme-color" content="#FFFCF7">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
 </head>
 <body>
 
+<a class="skip-link" href="#main">跳到主要内容</a>
+<a id="top"></a>
+
 <!-- ==========================================================
-     顶部导航：每个页面都一模一样，只有 class="active" 挂在哪一项不同
+     顶部导航：每个页面都一模一样，只有当前页那一项会同时挂上 active 和 aria-current
      注意 href 写的是 "about.html"，不是全路径——这就是"相对路径"
      ========================================================== -->
 <header class="topbar">
   <div class="wrap bar">
     <a class="logo" href="index.html"><span class="dot"></span>钟欣雨</a>
-    <nav class="nav">
-      <a href="index.html" class="active">首页</a>
+    <nav class="nav" aria-label="主导航">
+      <a href="index.html" class="active" aria-current="page">首页</a>
       <a href="about.html">关于我</a>
       <a href="daily.html">我的日常</a>
       <a href="album.html">小相册</a>
@@ -26,7 +33,7 @@
   </div>
 </header>
 
-<main>
+<main id="main">
 
   <!-- ---------- 首屏 ---------- -->
   <section class="wrap hero">
@@ -49,7 +56,7 @@
     <div class="portrait fade d1">
       <span class="tape"></span>
       <div class="photo">
-        <img src="images/avatar.jpg" alt="钟欣雨的头像：高马尾、金色圆框眼镜、白毛衣">
+        <img src="images/avatar.jpg" alt="钟欣雨的头像：高马尾、金色圆框眼镜、白毛衣" width="640" height="575">
       </div>
       <span class="sticker s1">武汉人</span>
       <span class="sticker s2">慢热体质</span>
@@ -61,9 +68,9 @@
     <h2 class="sec-title">最近的样子</h2>
     <p class="sec-sub">手机里随手拍的三张，凑成了我最近的生活。</p>
     <div class="strip fade">
-      <a href="album.html"><img src="images/campus-sunset.jpg" alt="傍晚的校园，天空是橘粉色的"></a>
-      <a href="about.html"><img src="images/dorm-desk.jpg" alt="蓝色的宿舍书桌和一把木椅"></a>
-      <a href="daily.html"><img src="images/noodles.jpg" alt="一碗加了很多辣的牛肉面"></a>
+      <a href="album.html"><img src="images/campus-sunset.jpg" alt="傍晚的校园，天空是橘粉色的" width="1000" height="750"></a>
+      <a href="about.html"><img src="images/dorm-desk.jpg" alt="蓝色的宿舍书桌和一把木椅" width="750" height="1000"></a>
+      <a href="daily.html"><img src="images/noodles.jpg" alt="一碗加了很多辣的牛肉面" width="750" height="1000"></a>
     </div>
   </section>
 
@@ -124,6 +131,7 @@
 
 <footer>
   <p>© 2026 钟欣雨 · 手写 HTML 与 CSS，未使用任何模板</p>
+  <p class="foot-links"><a class="to-top" href="#top">回到顶部 ↑</a></p>
 </footer>
 
 </body>

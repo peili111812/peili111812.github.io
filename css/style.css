@@ -1,6 +1,6 @@
-/* ==========================================================
-   style.css —— 5 个页面共用的样式表
-   改这一个文件，5 个页面会一起变。这是"共用样式表"最大的好处。
+﻿/* ==========================================================
+   style.css —— 6 个页面共用的样式表
+   改这一个文件，6 个页面会一起变。这是"共用样式表"最大的好处。
    ========================================================== */
 
 /* 1) 全站的颜色、圆角集中在这里。想换配色，只改这一段就行 */
@@ -44,7 +44,7 @@ body::before{
   pointer-events:none;
 }
 
-img{max-width:100%;display:block;}
+img{max-width:100%;display:block;height:auto;}
 
 /* 3) 统一的内容宽度：屏幕再宽，正文也不会拉成一条线 */
 .wrap{
@@ -117,7 +117,7 @@ img{max-width:100%;display:block;}
   transition:.22s;
 }
 .nav a:hover{background:#FFF1EC;color:var(--ink);}
-.nav a.active{background:var(--peach);color:#fff;font-weight:600;}
+.nav a.active{background:var(--peach);color:#5A3B37;font-weight:600;}
 
 /* 5) 按钮 */
 .btn{
@@ -134,7 +134,7 @@ img{max-width:100%;display:block;}
 }
 .btn-main{
   background:var(--peach);
-  color:#fff;
+  color:#5A3B37;
   box-shadow:0 10px 20px rgba(238,124,143,.28);
 }
 .btn-main:hover{background:var(--peach-deep);transform:translateY(-2px);}
@@ -163,7 +163,7 @@ img{max-width:100%;display:block;}
   border-radius:999px;
 }
 .hero h1{
-  font-size:clamp(32px,4.4vw,52px);
+  font-size:clamp(28px,3.9vw,44px);
   line-height:1.28;
   letter-spacing:-.5px;
   margin:20px 0 16px;
@@ -360,33 +360,7 @@ img{max-width:100%;display:block;}
 .tl-item h3{margin:4px 0 6px;font-size:17px;font-weight:700;}
 .tl-item p{margin:0;color:var(--ink-soft);font-size:15px;}
 
-/* 13) 技能进度条 */
-.skill{margin-bottom:22px;}
-.skill .top{
-  display:flex;
-  justify-content:space-between;
-  font-size:15px;
-  margin-bottom:8px;
-}
-.skill .top b{font-weight:600;}
-.skill .top span{color:var(--ink-soft);font-size:13px;}
-.bar{
-  height:12px;
-  background:#F8EFE9;
-  border-radius:999px;
-  overflow:hidden;
-}
-.bar i{
-  display:block;
-  height:100%;
-  border-radius:999px;
-  background:var(--peach);
-}
-.bar i.b2{background:var(--mint);}
-.bar i.b3{background:var(--sky);}
-.bar i.b4{background:var(--butter);}
-
-/* 14) 小标签 */
+/* 13) 小标签 */
 .tags{display:flex;flex-wrap:wrap;gap:9px;margin:6px 0 0;padding:0;list-style:none;}
 .tags li{
   font-size:13px;
@@ -397,39 +371,7 @@ img{max-width:100%;display:block;}
   border:1px solid #FFE3D8;
 }
 
-/* 15) 作品卡片 */
-.works{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:24px;
-  padding:26px 0 10px;
-}
-.work{
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:var(--r);
-  overflow:hidden;
-  transition:.28s;
-}
-.work:hover{transform:translateY(-5px);box-shadow:var(--shadow);}
-.work .cover{
-  aspect-ratio:16/9;
-  display:grid;
-  place-items:center;
-  font-size:34px;
-  font-weight:800;
-  color:#fff;
-  background:var(--peach);
-  letter-spacing:1px;
-}
-.cover.c2{background:var(--mint);color:#2F6B55;}
-.cover.c3{background:var(--sky);color:#2C5C8A;}
-.cover.c4{background:var(--butter);color:#8A6420;}
-.work .body{padding:22px 24px 26px;}
-.work h3{margin:0 0 6px;font-size:18px;}
-.work p{margin:0 0 14px;color:var(--ink-soft);font-size:15px;}
-
-/* 16) 联系页：三张信息卡 + 表单 */
+/* 14) 联系页：三张信息卡 + 表单 */
 .contact-cards{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -447,54 +389,7 @@ img{max-width:100%;display:block;}
 .cc h3{margin:0 0 4px;font-size:16px;}
 .cc p{margin:0;color:var(--ink-soft);font-size:14px;word-break:break-all;}
 
-.form{
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:var(--r);
-  padding:30px;
-  margin:30px 0 10px;
-}
-.form label{
-  display:block;
-  font-size:14px;
-  font-weight:600;
-  margin:0 0 7px;
-}
-.form input,
-.form textarea{
-  width:100%;
-  font:inherit;
-  font-size:15px;
-  color:var(--ink);
-  padding:13px 16px;
-  border:1.5px solid var(--line);
-  border-radius:16px;
-  background:#FFFCFA;
-  margin-bottom:18px;
-  outline:none;
-  transition:.2s;
-}
-.form input:focus,
-.form textarea:focus{
-  border-color:var(--peach);
-  background:#fff;
-}
-.form textarea{resize:vertical;min-height:130px;}
-.form button{
-  font:inherit;
-  font-size:15px;
-  font-weight:600;
-  color:#fff;
-  background:var(--peach);
-  border:none;
-  padding:13px 30px;
-  border-radius:999px;
-  cursor:pointer;
-  transition:.25s;
-}
-.form button:hover{background:var(--peach-deep);transform:translateY(-2px);}
-
-/* 17) 页脚 */
+/* 15) 页脚 */
 footer{
   margin-top:70px;
   padding:36px 0 44px;
@@ -504,7 +399,7 @@ footer{
   font-size:13px;
 }
 
-/* 18) 入场动画：轻轻往上浮 */
+/* 16) 入场动画：轻轻往上浮 */
 @media (prefers-reduced-motion: no-preference){
   .fade{animation:up .7s cubic-bezier(.2,.7,.3,1) both;}
   .fade.d1{animation-delay:.08s;}
@@ -515,68 +410,20 @@ footer{
   }
 }
 
-/* 19) 窄屏适配：小于 860px 时改成单栏 */
+/* 17) 窄屏适配：小于 860px 时改成单栏 */
 @media (max-width:860px){
   .hero{grid-template-columns:1fr;gap:38px;padding:44px 0 30px;}
   .portrait{justify-self:center;max-width:280px;transform:rotate(1.6deg);}
   .grid3{grid-template-columns:1fr;}
   .split{grid-template-columns:1fr;gap:24px;}
   .profile{position:static;}
-  .works{grid-template-columns:1fr;}
   .contact-cards{grid-template-columns:1fr;}
   .bar{flex-wrap:wrap;}
-  .nav{width:100%;order:3;}
+  .nav{width:100%;order:3;min-width:0;flex-wrap:wrap;justify-content:center;}
   .note{flex-direction:column;align-items:flex-start;}
 }
 
-/* 20) 相册页：照片墙 */
-.album{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:22px;
-  padding:26px 0 10px;
-}
-.shot{
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:var(--r);
-  overflow:hidden;
-  transition:.28s;
-}
-.shot:hover{
-  transform:translateY(-5px) rotate(-.6deg);   /* 悬停时歪一点点，像被人拿起来的照片 */
-  box-shadow:var(--shadow);
-}
-.shot .ph{
-  aspect-ratio:4/3;
-  display:grid;
-  place-items:center;
-  font-size:46px;
-}
-.p1{background:#FFF0F2;}
-.p2{background:#FDF6E7;}
-.p3{background:#EDF9F2;}
-.p4{background:#EFF5FC;}
-.p5{background:#F6F0FC;}
-.p6{background:#FFF3EC;}
-.shot img{                      /* 换成真照片后自动裁成统一比例 */
-  width:100%;
-  aspect-ratio:4/3;
-  object-fit:cover;
-  display:block;
-}
-.shot .cap{padding:16px 18px 20px;}
-.shot .cap h3{margin:0 0 4px;font-size:15px;}
-.shot .cap p{margin:0;color:var(--ink-soft);font-size:13px;}
-
-@media (max-width:860px){
-  .album{grid-template-columns:repeat(2,1fr);}
-}
-@media (max-width:560px){
-  .album{grid-template-columns:1fr;}
-}
-
-/* 20.5) 头像图：首页大卡 + 侧边小圆卡 */
+/* 18) 头像图：首页大卡 + 侧边小圆卡 */
 .photo img{
   width:100%;
   display:block;
@@ -587,7 +434,7 @@ footer{
   object-fit:cover;   /* 自动裁成圆形，不变形 */
 }
 
-/* 21) 真照片卡片（带说明文字） */
+/* 19) 真照片卡片（带说明文字） */
 .photo-card{  background:#fff;
   border:1px solid var(--line);
   border-radius:22px;
@@ -617,7 +464,7 @@ footer{
   margin-bottom:2px;
 }
 
-/* 22) 瀑布流：照片高度不一样也能排得好看 */
+/* 20) 瀑布流：照片高度不一样也能排得好看 */
 .masonry{
   columns:3;
   column-gap:20px;
@@ -628,7 +475,7 @@ footer{
   margin:0 0 20px;
 }
 
-/* 23) 相册分组标题 */
+/* 21) 相册分组标题 */
 .group-title{
   display:flex;
   align-items:center;
@@ -650,7 +497,7 @@ footer{
   margin:6px 0 0;
 }
 
-/* 24) 两列图文（关于我 / 日常用） */
+/* 22) 两列图文（关于我 / 日常用） */
 .two-col{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -658,7 +505,7 @@ footer{
   padding:22px 0 4px;
 }
 
-/* 25) 首页三张照片的小横带 */
+/* 23) 首页三张照片的小横带 */
 .strip{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -686,4 +533,74 @@ footer{
   .masonry{columns:1;}
   .strip{grid-template-columns:1fr;}
   .strip img:last-child{grid-column:auto;}
+}
+
+/* 24) 可点击的照片：悬停轻微放大 + 提示可以看大图 */
+.zoom{
+  display:block;
+  position:relative;
+  cursor:zoom-in;
+  overflow:hidden;
+}
+.zoom img{transition:transform .5s cubic-bezier(.2,.7,.3,1);}
+.zoom:hover img,
+.zoom:focus-visible img{transform:scale(1.04);}
+.zoom::after{
+  content:"点击看大图";
+  position:absolute;
+  left:12px;bottom:12px;
+  background:rgba(43,32,29,.72);
+  color:#fff;
+  font-size:12px;
+  letter-spacing:.3px;
+  padding:5px 11px;
+  border-radius:999px;
+  opacity:0;
+  transform:translateY(6px);
+  transition:.25s;
+  pointer-events:none;
+}
+.zoom:hover::after,
+.zoom:focus-visible::after{opacity:1;transform:translateY(0);}
+
+/* 25) 无障碍：跳到主要内容、回到顶部 */
+.skip-link{
+  position:absolute;
+  left:-9999px;top:0;
+  background:var(--ink);
+  color:#fff;
+  padding:10px 16px;
+  border-radius:0 0 10px 0;
+  z-index:99;
+}
+.skip-link:focus{left:0;}
+.to-top{
+  color:var(--ink-soft);
+  text-decoration:none;
+  font-size:13px;
+  border-bottom:1px dashed var(--line);
+}
+.to-top:hover{color:var(--peach-deep);border-bottom-color:var(--peach);}
+
+/* 26) 联系页：写信卡片（替代不能真正发送的表单） */
+.mailbox{
+  margin:30px 0 10px;
+  padding:34px 36px;
+  background:#FFF9F4;
+  border:1.5px dashed #FFD3CB;
+  border-radius:var(--r);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  flex-wrap:wrap;
+}
+.mailbox strong{font-size:17px;}
+
+/* 27) 更窄的屏幕上，导航换成两行，不横向滚动 */
+@media (max-width:560px){
+  .nav{flex-wrap:wrap;justify-content:center;}
+  .nav a{flex:1 1 30%;padding:6px 12px;font-size:13px;text-align:center;}
+  .mailbox{padding:26px 22px;}
+  .foot-links{margin-top:6px;}
 }

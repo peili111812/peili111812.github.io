@@ -5,16 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>我的日常 · 钟欣雨</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="钟欣雨的一天：早八、图书馆、食堂和深夜的两章小说，平平无奇但挺舒服的日常。">
+  <meta name="theme-color" content="#FFFCF7">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
 </head>
 <body>
+
+<a class="skip-link" href="#main">跳到主要内容</a>
+<a id="top"></a>
 
 <header class="topbar">
   <div class="wrap bar">
     <a class="logo" href="index.html"><span class="dot"></span>钟欣雨</a>
-    <nav class="nav">
+    <nav class="nav" aria-label="主导航">
       <a href="index.html">首页</a>
       <a href="about.html">关于我</a>
-      <a href="daily.html" class="active">我的日常</a>
+      <a href="daily.html" class="active" aria-current="page">我的日常</a>
       <a href="album.html">小相册</a>
       <a href="world.html">小世界</a>
       <a href="contact.html">联系我</a>
@@ -22,7 +29,7 @@
   </div>
 </header>
 
-<main>
+<main id="main">
 
   <section class="wrap page-head">
     <a class="crumb" href="index.html">← 返回首页</a>
@@ -93,28 +100,28 @@
 
       <div class="two-col">
         <figure class="photo-card">
-          <img src="images/classroom.jpg" alt="教室里老师在黑板上写极限的证明" loading="lazy">
+          <img src="images/classroom.jpg" alt="教室里老师在黑板上写极限的证明" loading="lazy" width="1000" height="750">
           <figcaption>
             <b>黑板上写不完的推导</b>
             老师一边讲一边写，写到第三块黑板的时候，我已经跟不上第一块了。
           </figcaption>
         </figure>
         <figure class="photo-card">
-          <img src="images/library-lamp.jpg" alt="图书馆桌上的笔记本电脑和台灯" loading="lazy">
+          <img src="images/library-lamp.jpg" alt="图书馆桌上的笔记本电脑和台灯" loading="lazy" width="750" height="1000">
           <figcaption>
             <b>图书馆的固定位置</b>
             一台电脑、一杯奶茶、一盏灯，能坐很久。
           </figcaption>
         </figure>
         <figure class="photo-card">
-          <img src="images/library-sofa.jpg" alt="靠窗的蓝色沙发、木圆桌和蓝色双肩包" loading="lazy">
+          <img src="images/library-sofa.jpg" alt="靠窗的蓝色沙发、木圆桌和蓝色双肩包" loading="lazy" width="750" height="1000">
           <figcaption>
             <b>靠窗的蓝沙发</b>
             自习室里我最喜欢的角落，学累了就往上一靠。
           </figcaption>
         </figure>
         <figure class="photo-card">
-          <img src="images/lab-robot.jpg" alt="实训室里的红色工业机器人设备" loading="lazy">
+          <img src="images/lab-robot.jpg" alt="实训室里的红色工业机器人设备" loading="lazy" width="750" height="1000">
           <figcaption>
             <b>实训课的机器人</b>
             第一次觉得自己学的东西真的能动手，红色的大机械臂挺可爱的。
@@ -127,21 +134,21 @@
 
       <div class="masonry">
         <figure class="photo-card">
-          <img src="images/noodles.jpg" alt="一大碗加了辣椒和青菜的牛肉面" loading="lazy">
+          <img src="images/noodles.jpg" alt="一大碗加了辣椒和青菜的牛肉面" loading="lazy" width="750" height="1000">
           <figcaption>
             <b>满分晚饭</b>
             辣椒给得很足，吃完一碗会安静地幸福很久。
           </figcaption>
         </figure>
         <figure class="photo-card">
-          <img src="images/sushi.jpg" alt="一盒淋了沙拉酱的外卖寿司" loading="lazy">
+          <img src="images/sushi.jpg" alt="一盒淋了沙拉酱的外卖寿司" loading="lazy" width="750" height="1000">
           <figcaption>
             <b>外卖寿司</b>
             摆得比吃得更认真，拍照先拍三分钟。
           </figcaption>
         </figure>
         <figure class="photo-card">
-          <img src="images/bbq.jpg" alt="一盘烧烤串和一杯奶茶" loading="lazy">
+          <img src="images/bbq.jpg" alt="一盘烧烤串和一杯奶茶" loading="lazy" width="562" height="1000">
           <figcaption>
             <b>夜宵标配</b>
             烧烤加奶茶，罪恶但快乐。
@@ -199,6 +206,7 @@
 
 <footer>
   <p>© 2026 钟欣雨 · 手写 HTML 与 CSS，未使用任何模板</p>
+  <p class="foot-links"><a class="to-top" href="#top">回到顶部 ↑</a></p>
 </footer>
 
 </body>
