@@ -605,3 +605,58 @@ footer{
   .mailbox{padding:26px 22px;}
   .foot-links{margin-top:6px;}
 }
+
+/* 28) 手机端：导航默认收起，点「菜单」才展开（纯 CSS，不需要 JS） */
+.nav-switch{
+  position:absolute;
+  width:1px;height:1px;
+  opacity:0;
+  pointer-events:none;
+}
+.nav-btn{display:none;}
+.nav-switch:focus-visible ~ .nav-btn{
+  outline:2px solid var(--peach);
+  outline-offset:2px;
+}
+
+@media (max-width:560px){
+  .bar{position:relative;padding:10px 0;}
+  .nav{display:none;}
+  .nav-switch:checked ~ .nav{display:flex;}
+  .nav-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    padding:7px 14px;
+    border:1px solid var(--line);
+    border-radius:999px;
+    background:#fff;
+    color:var(--ink);
+    font-size:13px;
+    font-weight:600;
+    cursor:pointer;
+    user-select:none;
+  }
+  .nav-btn-icon{
+    width:16px;height:2px;
+    background:currentColor;
+    border-radius:2px;
+    position:relative;
+    flex:none;
+  }
+  .nav-btn-icon::before,
+  .nav-btn-icon::after{
+    content:"";
+    position:absolute;
+    left:0;
+    width:16px;height:2px;
+    background:currentColor;
+    border-radius:2px;
+  }
+  .nav-btn-icon::before{top:-5px;}
+  .nav-btn-icon::after{top:5px;}
+  .nav-btn-close{display:none;}
+  .nav-switch:checked ~ .nav-btn .nav-btn-open{display:none;}
+  .nav-switch:checked ~ .nav-btn .nav-btn-close{display:inline;}
+  .nav{order:3;margin-top:10px;}
+}
