@@ -660,3 +660,47 @@ footer{
   .nav-switch:checked ~ .nav-btn .nav-btn-close{display:inline;}
   .nav{order:3;margin-top:10px;}
 }
+
+/* 29) 小世界：每组图片后面的一段随感 */
+.group-sum{
+  color:var(--ink-soft);
+  font-size:15px;
+  line-height:1.85;
+  margin:16px 0 0;
+  max-width:54em;
+}
+
+/* 30) 联系页：常见问题（details 折叠，纯 HTML） */
+.faq{
+  margin:16px 0 0;
+  display:grid;
+  gap:12px;
+}
+.faq-item{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:15px 20px;
+}
+.faq-item summary{
+  cursor:pointer;
+  font-weight:600;
+  font-size:15px;
+  list-style:none;
+  color:var(--ink);
+}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{
+  content:"+";
+  float:right;
+  color:var(--peach-deep);
+  font-weight:700;
+  margin-left:10px;
+}
+.faq-item[open] summary::after{content:"−";}
+.faq-item p{
+  margin:10px 0 0;
+  color:var(--ink-soft);
+  font-size:14px;
+  line-height:1.8;
+}
